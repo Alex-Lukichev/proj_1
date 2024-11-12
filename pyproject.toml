@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.12"
 python-dotenv = "^1.0.1"
 requests = "^2.32.3"
+openpyxl = "^3.1.5"
+pandas = "^2.2.3"
+pytest = "^8.3.3"
 
 
 [tool.poetry.group.lint.dependencies]
@@ -31,9 +34,11 @@ disallow_untyped_defs = true
 warn_return_any = true
 exclude = 'venv'
 
+
 [tool.black]
 line-length = 119
 exclude = '\.git'
 
 [tool.isort]
 line_length = 119
+
